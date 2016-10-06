@@ -13,9 +13,11 @@
 			ref.addEventListener('loadstart', function(){
 				document.getElementById("loading_div").className		= '';
 			});
-			ref.onload	= function(){
-				document.getElementById("loading_div").className		= 'hideLoading';
-			};
+			ref.addEventListener('loadstop', function(){
+				setTimeout(function(){
+					document.getElementById("loading_div").className		= 'hideLoading';
+				}, 1000);
+			});
 		}
 	}, false);
 })(window);
