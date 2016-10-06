@@ -10,6 +10,12 @@
 			alert("Sem conexão com a internet.");
 		}else{
 			var win = window.open("http://dpcontrol.com.br", "_self", 'location=no');
+			win.addEventListener('loadstart', function(){
+				document.getElementById("loading_div").className		= 'showLoading';
+			});
+			win.addEventListener('loadstop', function(){
+				document.getElementById("loading_div").className		= '';
+			});
 		}
 	}, false);
 })(window);
