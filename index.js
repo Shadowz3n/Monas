@@ -9,7 +9,7 @@
 		if(navigator.connection.type == 'none'){
 			alert("Sem conexão com a internet.");
 		}else{
-			var ref = window.open("http://dpcontrol.com.br", "_blank", 'location=yes');
+			var ref = window.open("http://dpcontrol.com.br", "_self", 'location=no, hidden=yes');
 			ref.addEventListener('loadstart', function(){
 				document.getElementById("loading_div").className		= '';
 			});
