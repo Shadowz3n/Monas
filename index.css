@@ -19,6 +19,6 @@ iframe{width:100%;height:100%}
 	to{transform: rotate(360deg)}
 }
 
-.showLoading{display:block!important;opacity:1!important}
-#loading_div{width:100%;height:100%;display:none;opacity:0;z-index:999999}
+.hideLoading{display:none;opacity:0}
+#loading_div{width:100%;height:100%;display:block!important;opacity:1!important;z-index:99999}
 #loading_img{display:table;-webkit-animation:spinning 2s infinite;animation:spinning 2s infinite;position:relative;left:50%;top:50%;-webkit-transform:translateY(-50%) translateX(-50%);transform:translateY(-50%) translateX(-50%)}
