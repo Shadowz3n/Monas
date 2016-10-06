@@ -12,6 +12,7 @@
 		Henrique Bissoli
 	</author>
 	<access origin="*" subdomains="true" browserOnly="true" launch-external="yes" />
+	<gap:plugin name="cordova-plugin-whitelist" spec="1.2.2" source="npm" />
 	<gap:plugin name="org.apache.cordova.core.inappbrowser" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
@@ -21,7 +22,6 @@
 	<allow-intent href="geo:*" />
 	
 	<platform name="android">
-		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 		<allow-intent href="market:*" />
 		<access origin="*" subdomains="true" />
 		<allow-intent href="*" />
@@ -34,7 +34,6 @@
         <icon src="grande.jpg" density="xxxhdpi" />
 	</platform>
 	<platform name="ios">
-		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
 		<icon src="grande.jpg" width="180" height="180" />
