@@ -13,9 +13,9 @@
 			ref.addEventListener('loadstart', function(){
 				document.getElementById("loading_div").className		= '';
 			});
-			ref.addEventListener('loadstop', function(){
+			ref.onload	= function(){
 				document.getElementById("loading_div").className		= 'hideLoading';
-			});
+			};
 		}
 	}, false);
 })(window);
